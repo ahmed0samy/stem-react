@@ -1,0 +1,58 @@
+.article {
+  height: 100%;
+  border-radius: 8px;
+  display: grid;
+  justify-items: center;
+  background-color: var(--white);
+  position: relative;
+  color: var(--black);
+  width: 200px;
+  grid-template-rows: auto 1fr auto;
+  margin: 10px;
+}
+.article * {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.article img {
+  width: 100px;
+  padding: 5px;
+}
+.article span {
+  width: 100%;
+  border-bottom: 1px solid var(--black);
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+}
+.article .img {
+  background-image: url("/google-drive.png");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.notAvailable {
+  color: var(--orange);
+  opacity: 0.5;
+  height: fit-content;
+  cursor: not-allowed;
+}
+.notAvailable:after {
+  content: "(not available right now)";
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--white);
+  padding: 3px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fc4630;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
